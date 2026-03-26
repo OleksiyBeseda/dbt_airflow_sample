@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="age_group", model=get_where_subquery(ref('patient_demographics'))) }}

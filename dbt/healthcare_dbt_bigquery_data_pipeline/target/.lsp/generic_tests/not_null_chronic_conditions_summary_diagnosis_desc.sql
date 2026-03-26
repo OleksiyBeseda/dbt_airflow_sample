@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="diagnosis_desc", model=get_where_subquery(ref('chronic_conditions_summary'))) }}

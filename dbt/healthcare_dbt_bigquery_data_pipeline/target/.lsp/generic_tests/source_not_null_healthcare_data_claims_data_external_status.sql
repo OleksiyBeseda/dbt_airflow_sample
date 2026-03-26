@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="status", model=get_where_subquery(source('healthcare_data', 'claims_data_external'))) }}

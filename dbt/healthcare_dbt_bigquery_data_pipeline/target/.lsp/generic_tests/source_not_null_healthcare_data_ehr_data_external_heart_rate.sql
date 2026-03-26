@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="heart_rate", model=get_where_subquery(source('healthcare_data', 'ehr_data_external'))) }}

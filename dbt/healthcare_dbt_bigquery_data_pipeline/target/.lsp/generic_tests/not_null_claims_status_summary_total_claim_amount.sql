@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="total_claim_amount", model=get_where_subquery(ref('claims_status_summary'))) }}

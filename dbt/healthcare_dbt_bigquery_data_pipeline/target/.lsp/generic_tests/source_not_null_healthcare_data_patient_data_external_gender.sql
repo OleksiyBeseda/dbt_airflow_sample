@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="gender", model=get_where_subquery(source('healthcare_data', 'patient_data_external'))) }}

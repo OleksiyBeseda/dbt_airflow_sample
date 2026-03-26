@@ -1,0 +1,82 @@
+==================== 2026-03-26T06:08:28.180618Z | 5f69d7aa-1b72-44cd-9809-6d2efed94f98 ====================
+06:08:28.180841 [info ]: Starting dbt LSP server
+06:08:28.180911 [info ]: Connecting to LSP client on port 8000
+06:08:28.181123 [info ]: Successfully connected to LSP client
+06:08:28.181130 [info ]: Creating LSP service...
+06:08:28.210994 [info ]: Creating LSP server...
+06:08:28.211009 [info ]: Starting LSP server...
+06:08:28.219270 [info ]: Loading profiles.yml
+06:08:28.229111 [info ]: Started loading project
+06:08:28.229327 [info ]: Loading profiles.yml
+06:08:28.341475 [info ]:    Started resolving packages from packages.yml
+06:08:28.670223 [warn ]: dbt1065: Package 'dbt_utils' requires dbt version [>=1.3.0, <2.0.0], but current version is 2.0.0-preview.154. This package may not be compatible with your dbt version.
+06:08:28.670721 [info ]: Installing packages
+06:08:28.671955 [info ]: Installing dbt-labs/dbt_utils
+06:08:28.672023 [info ]:   Finished [  0.33s] resolving packages from packages.yml (1 items)
+06:08:28.672289 [warn ]: dbt1065: Updated version available for dbt_utils@1.3.0: 1.3.3
+06:08:29.186320 [info ]:  Installed dbt-labs/dbt_utils: 1.3.0
+06:08:29.186547 [info ]:  Installed 1 package
+06:08:29.186644 [debug]:    Started loading packages
+06:08:29.188773 [debug]:     Loaded [  0.00s] packages
+06:08:29.189543 [info ]: Finished loading project [  0.96s]
+06:08:29.189880 [info ]: Started parsing
+06:08:29.212366 [debug]: Finished parsing models/schema.yml [  0.00s]
+06:08:29.212625 [debug]: Finished parsing models/sources.yml [  0.00s]
+06:08:29.224077 [debug]: Finished parsing models/chronic_conditions_summary.sql [  0.00s]
+06:08:29.224932 [debug]: Finished parsing models/claims_status_summary.sql [  0.00s]
+06:08:29.225656 [debug]: Finished parsing models/health_anomalies.sql [  0.00s]
+06:08:29.226406 [debug]: Finished parsing models/high_claim_patients.sql [  0.00s]
+06:08:29.230775 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models/schema.yml:64:23
+06:08:29.231280 [debug]: Finished parsing models/patient_demographics.sql [  0.00s]
+06:08:29.234409 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_dat_e9a0e2a8f92785f3ae6a96310aab2df5.sql [  0.00s]
+06:08:29.235190 [debug]: Finished parsing target/generic_tests/source_unique_healthcare_data_claims_data_external_claim_id.sql [  0.00s]
+06:08:29.235683 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_data_claims_data_external_claim_id.sql [  0.00s]
+06:08:29.235917 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_data_claims_data_external_patient_id.sql [  0.00s]
+06:08:29.236107 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_data_claims_data_external_status.sql [  0.00s]
+06:08:29.236382 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_dat_d49eda5e6fcfb07701b00e69c966db3c.sql [  0.00s]
+06:08:29.236611 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_data_ehr_data_external_heart_rate.sql [  0.00s]
+06:08:29.236863 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_data_ehr_data_external_patient_id.sql [  0.00s]
+06:08:29.237299 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_data_patient_data_external_age.sql [  0.00s]
+06:08:29.237552 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_dat_e00553020371af87b2230ceb0546902f.sql [  0.00s]
+06:08:29.238219 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_data_patient_data_external_gender.sql [  0.00s]
+06:08:29.238456 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_data_patient_data_external_last_name.sql [  0.00s]
+06:08:29.238642 [debug]: Finished parsing target/generic_tests/source_unique_healthcare_data_patient_data_external_patient_id.sql [  0.00s]
+06:08:29.238864 [debug]: Finished parsing target/generic_tests/source_not_null_healthcare_dat_af8f3897f6adaa193d7ea638868f9b8b.sql [  0.00s]
+06:08:29.239193 [debug]: Finished parsing target/generic_tests/unique_chronic_conditions_summary_diagnosis_code.sql [  0.00s]
+06:08:29.239824 [debug]: Finished parsing target/generic_tests/not_null_chronic_conditions_summary_diagnosis_code.sql [  0.00s]
+06:08:29.240044 [debug]: Finished parsing target/generic_tests/not_null_chronic_conditions_summary_diagnosis_desc.sql [  0.00s]
+06:08:29.240276 [debug]: Finished parsing target/generic_tests/not_null_chronic_conditions_summary_patient_count.sql [  0.00s]
+06:08:29.240566 [debug]: Finished parsing target/generic_tests/not_null_claims_status_summary_claim_count.sql [  0.00s]
+06:08:29.240792 [debug]: Finished parsing target/generic_tests/unique_claims_status_summary_claim_id.sql [  0.00s]
+06:08:29.241062 [debug]: Finished parsing target/generic_tests/not_null_claims_status_summary_claim_id.sql [  0.00s]
+06:08:29.241361 [debug]: Finished parsing target/generic_tests/not_null_claims_status_summary_status.sql [  0.00s]
+06:08:29.241517 [debug]: Finished parsing target/generic_tests/not_null_claims_status_summary_total_claim_amount.sql [  0.00s]
+06:08:29.241664 [debug]: Finished parsing target/generic_tests/not_null_health_anomalies_anomaly_flag.sql [  0.00s]
+06:08:29.241867 [debug]: Finished parsing target/generic_tests/accepted_values_health_anomali_5579f14f52df5d378489c5b016bbd839.sql [  0.00s]
+06:08:29.242032 [debug]: Finished parsing target/generic_tests/not_null_health_anomalies_patient_id.sql [  0.00s]
+06:08:29.242263 [debug]: Finished parsing target/generic_tests/not_null_health_anomalies_visit_date.sql [  0.00s]
+06:08:29.242592 [debug]: Finished parsing target/generic_tests/not_null_high_claim_patients_age.sql [  0.00s]
+06:08:29.242751 [debug]: Finished parsing target/generic_tests/not_null_high_claim_patients_first_name.sql [  0.00s]
+06:08:29.243109 [debug]: Finished parsing target/generic_tests/not_null_high_claim_patients_gender.sql [  0.00s]
+06:08:29.243731 [debug]: Finished parsing target/generic_tests/not_null_high_claim_patients_insurance_type.sql [  0.00s]
+06:08:29.244002 [debug]: Finished parsing target/generic_tests/not_null_high_claim_patients_last_name.sql [  0.00s]
+06:08:29.244238 [debug]: Finished parsing target/generic_tests/unique_high_claim_patients_patient_id.sql [  0.00s]
+06:08:29.244468 [debug]: Finished parsing target/generic_tests/not_null_high_claim_patients_patient_id.sql [  0.00s]
+06:08:29.244620 [debug]: Finished parsing target/generic_tests/not_null_patient_demographics_age_group.sql [  0.00s]
+06:08:29.244871 [debug]: Finished parsing target/generic_tests/not_null_patient_demographics_gender.sql [  0.00s]
+06:08:29.245009 [debug]: Finished parsing target/generic_tests/not_null_patient_demographics_insurance_type.sql [  0.00s]
+06:08:29.250955 [debug]: Finished parsing target/generic_tests/not_null_patient_demographics_patient_count.sql [  0.01s]
+06:08:29.251832 [info ]: Finished parsing [  0.06s]
+06:08:29.252137 [info ]: Cached model count updated: 5 models (estimate)
+06:08:29.252146 [info ]: Cached model count updated: 5 models (accurate)
+06:08:29.252308 [info ]: Started scheduling
+06:08:29.252602 [info ]: Finished scheduling [  0.00s]
+06:08:29.252609 [debug]: Compilation - 5 nodes selected: {"model.healthcare_dbt_bigquery_data_pipeline.chronic_conditions_summary", "model.healthcare_dbt_bigquery_data_pipeline.claims_status_summary", "model.healthcare_dbt_bigquery_data_pipeline.health_anomalies", "model.healthcare_dbt_bigquery_data_pipeline.high_claim_patients", "model.healthcare_dbt_bigquery_data_pipeline.patient_demographics"}
+06:08:29.252650 [info ]: Started scheduling
+06:08:29.252688 [info ]: Finished scheduling [  0.00s]
+06:08:29.253140 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "healthcare-data-project-442109", schema: "dev_healthcare_data", table: "claims_data_external" }) and interval: None
+06:08:29.253159 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "healthcare-data-project-442109", schema: "dev_healthcare_data", table: "patient_data_external" }) and interval: None
+06:08:29.253165 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "healthcare-data-project-442109", schema: "dev_healthcare_data", table: "ehr_data_external" }) and interval: None
+06:08:29.253947 [info ]: Started downloading schemas
+06:08:29.254731 [info ]: Finished downloading schemas [  0.00s]

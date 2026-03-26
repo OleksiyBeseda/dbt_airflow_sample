@@ -1,0 +1,1 @@
+{{ test_unique(column_name="claim_id", model=get_where_subquery(source('healthcare_data', 'claims_data_external'))) }}

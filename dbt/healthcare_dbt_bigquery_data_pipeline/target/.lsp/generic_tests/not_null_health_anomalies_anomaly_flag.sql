@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="anomaly_flag", model=get_where_subquery(ref('health_anomalies'))) }}

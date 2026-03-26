@@ -1,0 +1,1 @@
+{{ test_accepted_values(column_name="anomaly_flag", model=get_where_subquery(ref('health_anomalies')), values=["High Heart Rate","High Blood Pressure","High Temperature","Normal"]) }}

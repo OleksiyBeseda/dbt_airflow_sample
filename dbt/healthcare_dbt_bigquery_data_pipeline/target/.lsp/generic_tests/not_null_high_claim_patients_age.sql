@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="age", model=get_where_subquery(ref('high_claim_patients'))) }}

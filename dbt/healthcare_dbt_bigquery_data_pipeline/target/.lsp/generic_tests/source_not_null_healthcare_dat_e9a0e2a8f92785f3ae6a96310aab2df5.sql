@@ -1,0 +1,1 @@
+{{ test_not_null(column_name="claim_amount", model=get_where_subquery(source('healthcare_data', 'claims_data_external'))) }}
