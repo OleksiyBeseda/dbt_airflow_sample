@@ -1,12 +1,8 @@
-.git
-.env
-.DS_Store
-airflow_settings.yaml
-__pycache__/
-astro
-.venv
-airflow-webserver.pid
-webserver_config.py
-airflow.cfg
-airflow.db
-include/gcp/*
+
+target/
+dbt_packages/
+logs/
+# Ignore service account key files
+dags/keyfiles/*.json
+dags/keyfiles/
+dbt_internal_packages/
